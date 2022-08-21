@@ -1,0 +1,41 @@
+body {
+  font-family: "Roboto" , sans-serif;
+  color: var(--primary-text-color);
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+.button {
+  cursor: pointer;
+}
