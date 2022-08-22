@@ -3,11 +3,6 @@
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
-
-  // & .container {
-  //   display: flex;
-  //   align-items: baseline;
-  // }
 }
 
 .footer-list a {
@@ -47,7 +42,6 @@
   justify-content: center;
   margin-bottom: 60px;
 }
-
 
 .footer-social__item:not(:last-child) {
   margin-right: 10px;
@@ -90,13 +84,6 @@
   fill: var(--white);
 }
 
-// .footer-form {
-//   position: relative;
-//   display: flex;
-//   flex-direction: column;
-//   margin-left: 93px;
-// }
-
 .footer-form__label {
   display: block;
   margin-bottom: 20px;
@@ -132,9 +119,6 @@
 .footer-form .button {
   margin-left: auto;
   margin-right: auto;
-  // position: absolute;
-  // left: 370px;
-  // bottom: 0;
   width: 200px;
   height: 50px;
   padding-left: 31px;
@@ -155,4 +139,51 @@
 .button__icon-send {
   margin-left: 10px;
   fill: var(--white);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .tablet-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer-form__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .tablet-container {
+    align-items: baseline;
+    display: flex;
+  }
+
+  .footer-list {
+    margin-bottom: 0;
+  }
+
+  .footer-social {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
+
+  .footer-form {
+    position: relative;
+  }
+
+  .footer-form__input {
+    margin-bottom: 0;
+    width: 358px;
+  }
+
+  .footer-form .button {
+    position: absolute;
+    left: 370px;
+    bottom: 0;
+  }
 }

@@ -44,3 +44,23 @@
 
   color: #212121;
 }
+
+@media screen and (max-width:479px) {
+  .modal {
+    width: 94%;
+    height: 90%;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}

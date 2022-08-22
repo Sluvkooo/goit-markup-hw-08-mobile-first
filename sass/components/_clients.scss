@@ -1,11 +1,7 @@
-// .clients {
-//   margin: -30px;
-// }
-
 .clients__title {
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
 
@@ -15,17 +11,7 @@
 .clients-list {
   display: flex;
   flex-wrap: wrap;
-  grid-gap: 30px;
 }
-
-.clients-list__item {
-  width: 210px;
-  height: 92px;
-}
-
-// .clients-list__item:not(:last-child) {
-//   margin-right: 30px;
-// }
 
 .clients-list__icon {
   fill: #afb1b8;
@@ -33,7 +19,6 @@
 
 .clients-list__link {
   display: flex;
-  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -45,6 +30,72 @@
   &:hover,
   &:focus {
     border: 1px solid var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .clients-list__item {
+    width: 50%;
+    padding: 16px;
+    height: 92px;
+  }
+
+  .clients-list__item:nth-child(-n + 4) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .clients-list {
+    margin: -15px;
+  }
+
+  .clients-list__link {
+    margin: 15px;
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .clients-list__item {
+  }
+
+  .clients-list__link {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-list {
+    margin: -15px;
+  }
+
+  .clients-list__item {
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 28px;
+  }
+
+  .clients-list {
+    flex-wrap: nowrap;
+  }
+
+  .clients-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .clients-list__link {
+    width: 170px;
   }
 }
 

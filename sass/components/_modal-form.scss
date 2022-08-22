@@ -89,9 +89,6 @@
   width: 16px;
   height: 15px;
 
-  margin-left: 12px;
-  margin-right: 8px;
-
   border: 2px solid var(--primary-text-color);
   border-radius: 4px;
 
@@ -108,8 +105,6 @@
 }
 
 .submit-button {
-  margin-top: 30px;
-  margin-left: 135px;
   width: 200px;
   height: 50px;
   background: #188ce8;
@@ -123,4 +118,66 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: #ffffff;
+}
+
+@media screen and (max-width: 479px) {
+  .form-field__input {
+    width: 100%;
+  }
+
+  .form-field__textarea {
+    width: 100%;
+  }
+
+  .privacy-label {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+  }
+
+  .privacy-label__icon {
+    margin-left: 0;
+  }
+
+  .submit-button {
+    margin-top: 20px;
+    margin-left: 20%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .form-field__input {
+    width: 100%;
+  }
+
+  .form-field__textarea {
+    width: 100%;
+  }
+
+  .privacy-label {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+
+  .submit-button {
+    margin-top: 30px;
+    margin-left: 85px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .privacy-label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  .privacy-label__icon {
+    margin-left: 12px;
+    margin-right: 8px;
+  }
+
+  .submit-button {
+    margin-left: 124px;
+  }
 }
